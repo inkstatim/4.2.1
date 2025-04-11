@@ -1,0 +1,39 @@
+# creat token
+POST https://restful-booker.herokuapp.com/auth
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "admin",
+  "password": "password123"
+}
+
+###
+# all booking
+POST https://restful-booker.herokuapp.com/booking
+Content-Type: application/json
+Accept: application/json
+
+{
+            "firstname": "Test",
+            "lastname": "User",
+            "totalprice": 777,
+            "depositpaid": true,
+            "bookingdates": {
+                "checkin": "2024-04-10",
+                "checkout": "2024-04-12"
+            },
+            "additionalneeds": "Late checkout"
+        }
+###
+
+GET https://restful-booker.herokuapp.com/booking/2992
+Content-Type: application/json
+Accept: application/json
+
+###
+
+DELETE https://restful-booker.herokuapp.com/booking/2992
+Content-Type: application/json
+Accept: application/json
+Cookie: token=85073f7c33f791a
