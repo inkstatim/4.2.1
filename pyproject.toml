@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "booking-api-tests"
+version = "0.1.0"
+description = "API автотесты для системы бронирования"
+readme = "README.md"
+packages = [{ include = "tests" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+pytest = "^8.0.0"
+faker = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
